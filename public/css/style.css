@@ -48,13 +48,13 @@ header {
 }
 
 .box ul li:nth-child(1) {
-  background-color: rgb(236, 97, 91);
+  /* background-color: rgb(236, 97, 91); */
   color: white;
 }
 
 .box ul li:hover {
   color: white;
-  background-color: rgb(236, 97, 91);
+  /* background-color: rgb(236, 97, 91); */
 }
 #particles-js img {
   position: absolute;
@@ -73,8 +73,8 @@ header {
 }
 
 .nav-link:hover {
-  color: white;
-  background-color: rgb(236, 97, 91);
+  /* color: white; */
+  /* background-color: aliceblue; */
 }
 
 .nav-link {
@@ -108,7 +108,7 @@ body {
   overflow: hidden;
   margin: 5em auto;
   height: 500px;
-  width: 1200px;
+  width: 1100px;
   transition: all 0.3s ease-out;
 
   /* transform: translateX(-100%); */

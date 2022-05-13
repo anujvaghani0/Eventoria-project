@@ -9,7 +9,7 @@ router.get("/", (req, res, next) => {
 
 router.get("/signup", (req, res, next) => {
     if (!req.session.isAuthenticated) {
-        res.render("pages/signup", {userType: "user"});
+        res.render("pages/signup", {userTypeer: "user"});
     }
     else if (req.session.isAuthenticated && req.session.userType == 'user') {
         res.redirect("/user/dashboard");
