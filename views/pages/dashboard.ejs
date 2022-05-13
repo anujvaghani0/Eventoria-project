@@ -32,7 +32,7 @@
                   <p class="text-muted font-size-sm">Surat</p>
                   <button class="btn btn-primary">Follow</button>
                   <button class="btn btn-outline-primary" >
-                    <a href="/logout">logout</a>
+                    <a href="/<%= data.type %>/logout">logout</a>
                   
                   </button>
                 </div>
@@ -87,7 +87,11 @@
               <div class="row">
                 <div class="col-sm-12">
                   <a class="btn btn-info " target="__blank"
-                    href="">Edit</a>
+                    href="">Edit Profile</a>
+                    <% if (data.type === "organizer") { %>
+                      <a class="btn btn-info " target="__blank"
+                        href="/event/add">Add Event</a>
+                    <% } %>
                 </div>
               </div>
             </div>
